@@ -1,0 +1,148 @@
+.hero__company {
+}
+.hero__company__container {
+    background: url('../images/about-us-background-image.png');
+    background-repeat: no-repeat;
+    display: flex;
+    margin-bottom: 160px;
+    align-items: center;
+    justify-content: space-between;
+}
+.container {
+}
+.hero__company__content {
+}
+.hero__company__title {
+    color: $white-color;
+    margin-bottom: 32px;
+}
+.hero__company__description {
+    width: 100%;
+    max-width: 458px;
+    color: $white-color;
+}
+.hero__company__img__wrapper {
+    img{
+        border-top-right-radius: 8px;
+        border-bottom-right-radius: 8px;
+    }
+}
+
+.world__class {
+}
+.world__class__conainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 160px;
+    background-color: #FDF3F0;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+.container {
+}
+.world__class__img__wrapper {
+    img{
+        margin-left: -50px;
+    }
+}
+.world__class__content {
+    width: 445px;
+}
+.world__class__title {
+    color: $peach-color;
+    margin-bottom: 24px;
+}
+.world__class__description {
+}
+
+.countries {
+}
+.countries__container {
+    margin-bottom: 160px;
+}
+.container {
+}
+.countries__list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.countries__item {
+    text-align: center;
+    img{
+        margin-bottom: 48px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+}
+.countries__title {
+    margin-bottom: 42px;
+}
+.contries__link {
+}
+.light__btn {
+}
+.btn {
+}
+
+.deal {
+}
+.deal__container {
+    margin-bottom: 160px;
+    display: flex;
+    align-items: center;
+    background-color: #FDF3F0;
+    background-repeat: no-repeat;
+    justify-content: space-around;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+}
+.deal__content {
+    width: 445px;
+}
+.deal__title {
+    margin-bottom: 24px;
+    color: $peach-color;
+}
+.deal__description {
+}
+.deal__img__wrapper {
+    margin-right: -130px;
+}
+
+@media screen and (max-width: 768px){
+    .hero__company__container{
+        flex-direction: column-reverse;
+        background-size: cover;
+    }
+    .hero__company__img__wrapper{
+        margin-bottom: 64px;
+        img{
+            object-fit: cover;
+        }
+    }
+    .hero__company__description{
+        margin-bottom: 64px;
+    }
+    .world__class__conainer{
+        flex-direction: column;
+    }
+    .world__class__img__wrapper{
+        margin-bottom: 64px;
+    }
+    .countries__list{
+        flex-direction: column;
+    }
+    .countries__item{
+        margin-bottom: 64px;
+    }
+    .deal__container{
+        flex-direction: column-reverse;
+        margin-right: 0;
+        margin-left: 0;
+    }
+    .deal__img__wrapper{
+        margin-bottom: 64px;
+    }
+}

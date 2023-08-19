@@ -1,0 +1,107 @@
+.form {
+}
+.form__container {
+    margin-bottom: 160px;
+    display: flex;
+    background-image: url('../images/contact-us-background-image.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 1111px;
+    height: 480px;
+    align-items: center;
+    justify-content: space-between;
+}
+.form__content {
+}
+.form__title {
+    color: $white-color;
+    margin-bottom: 32px;
+}
+.contact__description {
+    color: $white-color;
+    width: 100%;
+    max-width: 445px;
+}
+.site__form {
+    width: 100%;
+    max-width: 380px;
+    height: 371px;
+    display: flex;
+    flex-direction: column;
+    textarea{
+        background-color: $peach-color;
+        border: 0;
+        padding-left: 16px;
+        padding-bottom: 76px;
+        border-bottom: 1px solid $white-color;
+        margin-bottom: 25px;
+        &::placeholder{
+            color: $white-color;
+            opacity: 0.5;
+        }
+    }
+    .submit{
+        width: 152px;
+        align-self: flex-end;
+    }
+}
+#name{
+    background-color: $peach-color;
+    border: 0;
+    padding-left: 16px;
+    padding-bottom: 12px;
+    border-bottom: 1px solid $white-color;
+    margin-bottom: 25px;
+    &::placeholder{
+        color: $white-color;
+        opacity: 0.5;
+    }
+}
+#email{
+    background-color: $peach-color;
+    border: 0;
+    padding-left: 16px;
+    padding-bottom: 12px;
+    border-bottom: 1px solid $white-color;
+    margin-bottom: 25px;
+    &::placeholder{
+        color: $white-color;
+        opacity: 0.5;
+    }
+}
+#phone{
+    background-color: $peach-color;
+    border: 0;
+    padding-left: 16px;
+    padding-bottom: 12px;
+    border-bottom: 1px solid $white-color;
+    margin-bottom: 25px;
+    &::placeholder{
+        color: $white-color;
+        opacity: 0.5;
+    }
+}
+
+@media screen and (max-width: 1110px){
+    .form__container{
+        flex-direction: column;
+        background: url('../images/contact-bg.png');
+        background-repeat: no-repeat;
+        align-items: flex-start;
+        width: 100%;
+        align-items: center; 
+        background-position: center;
+    }
+    .form__content{
+        margin-bottom: 32px;
+    }
+    .site__form{
+        margin-bottom: 64px;
+    }
+}
+
+@media screen and (max-width: 500px){
+    .site__form{
+        width: 100%;
+    }
+}

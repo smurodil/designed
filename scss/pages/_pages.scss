@@ -1,0 +1,129 @@
+.pages__hero {
+}
+.pages__hero__container {
+    background: url('../images/web-design-background.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin-top: 64px;
+    margin-bottom: 160px;
+    padding: 80px 0;
+    text-align: center;
+    border-radius: 8px;
+}
+.pages__hero__title {
+    margin-bottom: 24px;
+    color: $white-color;
+}
+.pages__hero__description {
+    color: $white-color;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.pages__services {
+}
+.pages__services__container {
+    margin-bottom: 160px;
+}
+.services__list__top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 32px;
+}
+.services__top__item {
+    width: 350px;
+    img{
+        border-top-left-radius: 8px;
+        border-top-right-radius: 8px;
+    }
+}
+.services__top__item__text {
+    background-color: #FDF3F0;
+    padding: 32px;
+    border-bottom-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+    text-align: center;
+    cursor: pointer;
+    &:hover{
+        background-color: $peach-color;
+        color: $white-color;
+        .services__top__item__title{
+            color: $white-color;
+        }
+    }
+}
+.services__top__item__title {
+    margin-bottom: 16px;
+    font-weight: 500;
+    font-size: 20px;
+    color: $peach-color;
+}
+.services__top__item__description {
+}
+.services__list__bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.btm{
+    justify-content: start;
+    li:first-child{
+        margin-right: 31px;
+    }
+}
+.pages__link__container{
+    margin-bottom: 160px;
+}
+.pages__img__wrapper{
+    display: flex;
+    justify-content: space-between;
+}
+
+.pages__link__text{
+    text-align: center;
+    a{
+        margin-top: 24px;
+    }
+}
+.lit{
+    background: url('../images/web-design-bacground-small.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.st{
+    letter-spacing: 1px;
+}
+
+.lib{
+    background: url('../images/web-design-bacground-small.png');
+    background-repeat: no-repeat;
+}
+
+@media screen and (max-width: 1100px){
+    .services__list__top{
+        flex-direction: column;
+    }
+    .services__top__item{
+        margin-bottom: 32px;
+    }
+    .services__list__bottom{
+        flex-direction: column;
+    }
+    .pages__img__wrapper{
+        flex-direction: column;
+    }
+    .pages__link__text{
+        display: flex;
+        flex-direction: column;
+        span{
+            margin-top: -50px;
+        }
+        a{
+            margin-right: auto;
+            margin-left: auto;
+        }
+    }
+}

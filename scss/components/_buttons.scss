@@ -1,0 +1,28 @@
+.btn{
+    font-weight: 500;
+    font-size: 1.5rem;
+    letter-spacing: 1px;
+    line-height: normal;
+    text-transform: uppercase;
+}
+
+.dark__btn{
+    background-color: $white-color;
+    color: $dark-grey-color;
+    padding: 18px 25px 16px 24px;
+    border-radius: 8px;
+    &:hover{
+        background-color: $light-peach-color;
+        color: $white-color;
+    }
+}
+
+.light__btn{
+    background-color: $peach-color;
+    color: $white-color;
+    padding: 18px 25px 16px 24px;
+    border-radius: 8px;
+    &:hover{
+        background-color: $light-peach-color;
+    }
+}
